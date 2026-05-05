@@ -3,7 +3,7 @@ import Navbar from './components/Navbar';
 import Home from './pages/home';
 import Classes from './pages/Classes'; 
 import Contact from './pages/Contact'; 
-import Login from './pages/Login'; // Soo dhex geli bogga cusub
+import Login from './pages/Login'; 
 
 function App() {
   return (
@@ -13,7 +13,7 @@ function App() {
         <Route path="/" element={<Home />} />
         <Route path="/classes" element={<Classes />} />
         <Route path="/contact" element={<Contact />} />
-        // Beddel line-ka 16 oo ka dhig kan:
+        {/* Beddel line-ka 16 oo ka dhig kan: */}
 <Route path="/login" element={<Login />} />
       </Routes>
     </Router>
