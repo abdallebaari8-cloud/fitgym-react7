@@ -1,0 +1,282 @@
+.hero-section {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed; /* Tani waxay siinaysaa dareen modern ah markaad scroll garayso */
+    color: white;
+  }
+  
+  .hero-content {
+    max-width: 800px;
+    text-align: center;
+    padding: 10px;
+  }
+  
+  .quote {
+    font-size: 30px; /* Qoraalka weyneey */
+    font-weight: 900;
+    line-height: 1.1;
+    margin-bottom: 15px;
+    text-transform: uppercase;
+    animation: fadeInUp 1s ease-out; /* Animation soo kacaya */
+  }
+  
+  .btn-red {
+    background-color: #ff0000;
+    border-radius: 30px;
+    color: white;
+    padding: 12px 24px;
+    border: none;
+    font-size: 1rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: transform 0.3s ease, background 0.3s;
+    margin-top: 20px;
+  }
+  
+  .btn-red:hover {
+    background-color: white;
+    color: #ff0000;
+    transform: scale(1.05); /* Badhanka ayaa yara weynaanaya marka la taabto */
+  }
+  
+  /* Animation-ka qoraalka */
+  @keyframes fadeInUp {
+    from {
+      opacity: 0;
+      transform: translateY(30px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+  .equipment-section {
+    padding: 80px 10%;
+    background-color: #f9f9f9;
+    text-align: center;
+  }
+  
+  .section-title {
+    font-size: 2.5rem;
+    font-weight: 900;
+    margin-bottom: 40px;
+    text-transform: uppercase;
+  }
+  
+  .text-red {
+    color: #ff0000;
+  }
+  
+  .equipment-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+  }
+  
+  .equipment-card {
+    position: relative;
+    height: 300px;
+    border-radius: 15px;
+    overflow: hidden;
+    cursor: pointer;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+  }
+  
+  .equipment-card img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.5s ease;
+  }
+  
+  .equipment-card:hover img {
+    transform: scale(1.1); /* Sawirka ayaa yara weynaanaya */
+  }
+  
+  .equipment-card .overlay {
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(transparent, rgba(0,0,0,0.8));
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    padding: 20px;
+    color: white;
+    text-align: left;
+    opacity: 0.9;
+  }
+  
+  .equipment-card h3 {
+    margin: 0;
+    font-size: 1.5rem;
+    text-transform: uppercase;
+  }
+  
+  .equipment-card p {
+    font-size: 0.9rem;
+    margin-top: 5px;
+    color: #ccc;
+  }
+
+
+  .equipment-grid {
+    display: grid;
+    /* Waxay si toos ah u nidaaminaysaa 3 ama 4 saf iyadoo ku xiran weynida shaashadda */
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); 
+    gap: 25px;
+    padding: 20px 0;
+  }
+  
+  .equipment-card {
+    position: relative;
+    height: 350px; /* Wax yar ayaan u weynaynay si sawirku u soo baxo */
+    border-radius: 20px; /* Geesaha oo yara wareegsan (Modern) */
+    overflow: hidden;
+    box-shadow: 0 15px 30px rgba(0,0,0,0.15);
+    transition: all 0.4s ease;
+  }
+  
+  .equipment-card:hover {
+    transform: translateY(-10px); /* Kor ayuu u kacayaa markaad dul istaagto */
+    box-shadow: 0 20px 40px rgba(255, 0, 0, 0.2); /* Iftiin gaduud ah ayaa ka soo baxaya hoosta */
+  }
+
+  .equipment-card img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Tani waxay hubinaysaa in sawirku buuxiyo meesha loogu talagalay */
+    display: block;
+  }
+  
+  /* Haddii sawirka uusan soo bixin, kani wuxuu siinayaa midab background ah */
+  .equipment-card {
+    background-color: #333; 
+    position: relative;
+    height: 350px;
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 0 15px 30px rgba(0,0,0,0.15);
+  }
+
+
+
+
+
+  /* Ambassadors Section Styling */
+.ambassadors-section {
+  background-color: #47424281; /* Madow madow ka xiga */
+  padding: 80px 20px;
+  text-align: center;
+}
+
+.ambassadors-title {
+  color: #ffffff;
+  font-size: 2.5rem;
+  font-weight: 800;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+  letter-spacing: -1px;
+}
+
+.ambassadors-subtitle {
+  color: #000000;
+  font-weight: bold;
+  text-transform: uppercase;
+  font-size: 0.9rem;
+  letter-spacing: 3px;
+  margin-bottom: 50px;
+  display: block;
+}
+
+.ambassadors-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 30px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.ambassador-card {
+  position: relative;
+  height: 450px;
+  border-radius: 20px;
+  overflow: hidden;
+  cursor: pointer;
+  border: 1px solid #222;
+}
+
+.ambassador-card img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.5s ease;
+}
+
+.ambassador-card:hover img {
+  transform: scale(1.1);
+}
+
+.ambassador-overlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(to top, rgba(0, 0, 0, 0.9) 10%, transparent 60%);
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: flex-start;
+  padding: 30px;
+  text-align: left;
+}
+
+.ambassador-info h3 {
+  color: #fff;
+  font-size: 1.8rem;
+  margin: 0;
+  font-weight: 700;
+  text-transform: uppercase;
+  font-style: italic;
+}
+
+.ambassador-info p {
+  color: #ff0000; /* Midabka cas ee gym-kaaga */
+  font-weight: 600;
+  margin-top: 5px;
+  font-size: 0.9rem;
+  text-transform: uppercase;
+}
+
+/* Button qarsoon oo soo baxaya markaad dul istaagto */
+.view-btn {
+  margin-top: 15px;
+  padding: 10px 25px;
+  background-color: #fff;
+  color: #000;
+  border: none;
+  border-radius: 50px;
+  font-weight: bold;
+  font-size: 0.8rem;
+  opacity: 0;
+  transform: translateY(20px);
+  transition: all 0.3s ease;
+}
+
+.ambassador-card:hover .view-btn {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Responsiveness - Mobile mobile */
+@media (max-width: 768px) {
+  .ambassadors-grid {
+      grid-template-columns: 1fr;
+  }
+  .ambassador-card {
+      height: 400px;
+  }
+}

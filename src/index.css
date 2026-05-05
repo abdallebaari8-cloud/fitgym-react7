@@ -1,0 +1,24 @@
+:root {
+  --primary-red: hsl(0, 85%, 50%);
+  --dark-bg: hsl(0, 0%, 8%);
+  --white: hsl(0, 0%, 100%);
+}
+
+body {
+  margin: 0;
+  font-family: 'Inter', sans-serif;
+  overflow-x: hidden;
+}
+
+/* Button style guud */
+.btn-red {
+  background-color: var(--primary-red);
+  color: white;
+  padding: 12px 24px;
+  border: none;
+  height: 40px;
+  font-weight: bold;
+  text-transform: uppercase;
+  cursor: pointer;
+  border-radius: 4px;
+}

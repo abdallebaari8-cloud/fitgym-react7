@@ -1,0 +1,58 @@
+/* Classes.css */
+
+.classes-container {
+    background-color: #000;
+    min-height: 100vh;
+    padding: 120px 20px;
+    color: white;
+    text-align: center;
+}
+
+.text-red {
+    color: #ff0000;
+}
+
+.table-responsive {
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.schedule-table {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: #111;
+    border: 1px solid #222;
+}
+
+.schedule-table th {
+    background-color: #222;
+    padding: 20px;
+    text-transform: uppercase;
+    color: #ff0000;
+}
+
+.schedule-table td {
+    padding: 25px;
+    border-bottom: 1px solid #222;
+}
+
+/* Midabka qaybta RAGGA */
+.men-row .group-col {
+    color: #0088ff; /* Buluug khafif ah */
+    font-weight: bold;
+}
+
+/* Midabka qaybta DUMARKA */
+.women-row .group-col {
+    color: #ff0077; /* Pink/Rose */
+    font-weight: bold;
+}
+
+.time-col {
+    font-weight: bold;
+    font-size: 1.1rem;
+}
+
+.schedule-table tr:hover {
+    background-color: #1a1a1a;
+}
